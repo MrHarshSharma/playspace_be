@@ -58,6 +58,10 @@ app.get('/playspaces', async (req, res) => {
   }
 });
 
+app.get('/working', async (req, res) => {
+  res.json({ message: 'Working' });
+});
+
 // Create a new playspace
 app.post('/playspaces', upload.single('image'), async (req, res) => {
   try {
