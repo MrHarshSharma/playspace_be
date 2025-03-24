@@ -58,7 +58,7 @@ app.get('/playspaces', async (req, res) => {
   }
 });
 
-app.get('/working', async (req, res) => {
+app.get('/api/working', async (req, res) => {
   res.json({ message: 'Working' });
 });
 
